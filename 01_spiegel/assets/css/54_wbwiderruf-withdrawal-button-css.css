@@ -1,0 +1,22 @@
+.wbwb-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:12px 16px;
+  border-radius:var(--wb-radius,12px);
+  border:1px solid var(--wb-btn-border,#2271b1);
+  background:var(--wb-btn-bg,#2271b1);
+  color:var(--wb-btn-text,#fff);
+  text-decoration:none;
+  cursor:pointer;
+  line-height:1.1;
+  font-weight:700;
+  transition:transform .05s ease, background .15s ease, color .15s ease, border-color .15s ease;
+}
+.wbwb-btn:hover{
+  background:var(--wb-btn-hover-bg,#135e96);
+  color:var(--wb-btn-hover-text,#fff);
+  border-color:var(--wb-btn-hover-bg,#135e96);
+}
+.wbwb-btn:active{transform:scale(.99)}
+.wbwb-btn:focus{outline:2px solid var(--wb-focus,#2271b1);outline-offset:2px}
