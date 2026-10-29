@@ -13,7 +13,7 @@ die Sticky-Leiste scrollt nur dorthin (kein click/submit).
 | Datei | Zweck |
 |---|---|
 | `SANNIS_Produktseite_179_VarianteC_Block.html` | Der Block, komplett kopierbar (ca. 33 KB) |
-| `assets/fonts/` | Schriften: TeX Gyre Adventor (frei, GUST-FL) als Ersatz für ITC Avant Garde Gothic Pro; Hanken Grotesk (SIL OFL) für Fließtext |
+| `assets/fonts/` | Schriften: ITC Avant Garde Gothic Pro Bold + Book als WOFF2 (Original, Lizenz SANNIS, nur für sannis.at); Hanken Grotesk (SIL OFL) für Fließtext |
 | `assets/img/s_pattern_tile_tonintone.png` | S-Pattern-Kachel für das Statement-Band |
 
 ## Einbau (ca. 20 Minuten)
@@ -28,9 +28,9 @@ die Sticky-Leiste scrollt nur dorthin (kein click/submit).
 6. **Preis 250 ml:** steht fest im Block (17,90 €) → bei Preisänderung dort nachziehen. Der 500-ml-Preis wird live aus der Seite gelesen.
 
 ## Schrift
-Headlines im neuen Design = **ITC Avant Garde Gothic Pro** (SANNIS hat die Lizenz, freigegeben für Headlines). Sobald die Webfont-Dateien
-(WOFF2 Bold, Book) vorliegen, in `assets/fonts/` ablegen und die beiden `@font-face`-Regeln „SANNIS Display“ im Block auf diese Dateien zeigen lassen;
-die `local()`-Einträge bleiben. Bis dahin rendert die freie Ersatzschrift TeX Gyre Adventor (etwas leichter und enger).
+Headlines = **ITC Avant Garde Gothic Pro** (Original, SANNIS hat die Lizenz gekauft, Freigabe für Headlines 29.10.2026). Die WOFF2-Dateien Bold und Book
+liegen in `assets/fonts/` und sind im Block per `@font-face` („SANNIS Display“) eingebunden. Nur auf SANNIS-Domains einsetzen, nicht weitergeben.
+Weitere Schnitte (Extra Light, Medium, Demi, Obliques) liegen bei SANNIS (Drive „Logos & Branding/Schriften_ITC_Avant_Garde_Gothic_Pro_gekauft_2026“).
 
 ## Regeln
 - Firewall-sicher: kein HTML in JS-Strings, keine `on…`-Attribute, keine externen Skripte, kein Base64.
